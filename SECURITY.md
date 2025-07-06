@@ -21,7 +21,7 @@ We take security seriously. If you discover a security vulnerability, please rep
 
 **Instead, please:**
 
-1. **Email us directly** at: [security@yourdomain.com] (replace with actual email)
+1. **Email us directly** at: admin@responder.infosecbyalex.com (replace with actual email)
 2. **Use encrypted communication** if possible (PGP key available on request)
 3. **Include detailed information** about the vulnerability
 4. **Provide reproduction steps** if possible
