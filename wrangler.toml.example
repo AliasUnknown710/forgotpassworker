@@ -1,0 +1,39 @@
+name = "forgot-password-worker"
+main = "index.js"
+compatibility_date = "2023-12-01"
+
+# Worker configuration
+workers_dev = true
+compatibility_flags = ["nodejs_compat"]
+
+# Environment variables for development
+[env.development.vars]
+USER_EMAIL = "test@example.com"
+FROM_EMAIL = "noreply@yourdomain.com"
+RESET_URL_BASE = "https://yourdomain.com/reset-password"
+
+# Environment variables for production
+[env.production.vars]
+FROM_EMAIL = "noreply@yourdomain.com"
+RESET_URL_BASE = "https://yourdomain.com/reset-password"
+
+# Secrets (set these using wrangler secret put)
+# wrangler secret put SENDGRID_API_KEY
+# wrangler secret put USER_EMAIL (for production)
+
+# Optional: Custom domain configuration
+# [[env.production.routes]]
+# pattern = "api.yourdomain.com/forgot-password"
+# zone_name = "yourdomain.com"
+
+# Optional: KV namespace for rate limiting
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# Optional: D1 database binding
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "your-database-name"
+# database_id = "your-database-id"

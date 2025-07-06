@@ -1,0 +1,39 @@
+{
+  "name": "forgot-password-worker",
+  "version": "1.0.0",
+  "description": "A Cloudflare Worker template for handling forgot password requests",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "test": "wrangler dev --local",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "forgot-password",
+    "authentication",
+    "password-reset",
+    "template"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/forgot-password-worker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/forgot-password-worker/issues"
+  },
+  "homepage": "https://github.com/your-username/forgot-password-worker#readme"
+}
